@@ -103,7 +103,7 @@ while keep_going == "":
 
     # Comments for squares/primes
     if len(factor_list) == 2:
-        comment = "{} is a prime- number. ".format(var_to_factor)
+        comment = "{} is a prime number. ".format(var_to_factor)
     elif len(factor_list) % 2 == 1:
         comment = "{} is a perfect square".format(var_to_factor)
     
