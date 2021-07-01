@@ -56,7 +56,7 @@ def get_factors(to_factor):
 
     factors_list = []
 
-    for item in range(1, stop):
+    for item in range(1, stop + 1):
         # print("to_factor % {}".format(item))
         is_factor =to_factor % item
 
@@ -68,7 +68,9 @@ def get_factors(to_factor):
             
 
             factors_list.append(item)
-            factors_list.append(factor_2)
+
+            if factor_2 not in factors_list:
+                factors_list.append(factor_2)
 
     # output
     factors_list.sort()
