@@ -1,4 +1,4 @@
-# Checks input is a number more than one
+# Checks input is a number more than a given number
 def num_check(question):
     valid = False
     while not valid:
@@ -22,6 +22,7 @@ def num_check(question):
         except ValueError:
             print(error)
             print()
+
 # Main routine goes here
 keep_going = ""
 while keep_going == "":
