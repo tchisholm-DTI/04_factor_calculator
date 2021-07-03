@@ -20,7 +20,10 @@ def statement_generator(text, decoration):
 def instructions():
 
     statement_generator("Instructions/information", "-")
-    print("Instructions will go here")
+    print()
+    print("Please choose a number that is greater than or equal to one and less than or equal to 200")
+    print()
+    print("Complete as many calculations as necessary, pressing <enter> at the end of each calculation or any key to quit.")
     print()
     return ""
 
@@ -29,7 +32,7 @@ def num_check(question):
     valid = False
     while not valid:
 
-        error = "Please enter a number that is more than (or equal to) one"
+        error = "Please enter a number that is greater than or equal to one and less than or equal to 200"
 
         try:
 
@@ -37,7 +40,7 @@ def num_check(question):
             response = float(input(question))
 
             # Checks number is more than (or equal to) one
-            if response >= 1:
+            if  1 <= response <= 200:
                 return response
 
             # Outputs error if input is invalid
