@@ -18,9 +18,7 @@ def instructions():
 
     statement_generator("Instructions/information", "-")
     print()
-    print("Please choose a data type (image/text/integer)")
-    print()
-    print("This program assumes that images are being represented in 24 bit colour (ie: 24 bits per pixel). For text, we assume that ascii encoding is being used (8 bits per character). ")
+    print("Please choose a number that is greater than or equal to one and less than or equal to 200")
     print()
     print("Complete as many calculations as necessary, pressing <enter> at the end of each calculation or any key to quit.")
     print()
