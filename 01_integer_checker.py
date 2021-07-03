@@ -10,8 +10,8 @@ def num_check(question):
             # Ask user to enter a number
             response = float(input(question))
 
-            # Checks number is more than (or equal to) one and less than or equal to 200
-            if response >= 1:
+            # Checks number is more than or equal to one and less than or equal to 200
+            if  1 <= response <= 200:
                 return response
 
             # Outputs error if input is invalid
